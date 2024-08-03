@@ -11,6 +11,10 @@
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+img {
+   width: 100%;
+}
+
 
 a {
    text-decoration: none;
@@ -116,10 +120,46 @@ a {
  }
 
  .chart {
-   width: 1200px;
-   height: 800px;
+   width: 2200px;
+   height: 900px;
     padding: 2rem;
     background-color: #fff;
+ }
+
+ @media screen and (max-width: 1440px) {
+
+   .header {
+      padding: 1em;
+   }
+
+   .main_section {
+      padding: 1em;
+   }
+
+   .chart {
+      width: 1400px;
+      height: 900px;
+      padding: 1em;
+   }
+   
+ }
+
+ @media screen and (max-width: 1024px) {
+
+   .header {
+      padding: 1em;
+   }
+
+   .main_section {
+      padding: 10px;
+   }
+
+   .chart {
+      width: 900px;
+      height: 900px;
+      padding: 10px;
+   }
+   
  }
 
  @media screen and (max-width: 769px) {
@@ -184,6 +224,14 @@ a {
       padding: 7px;
   }
 
+  .main {
+   padding: 1em;
+  }
+
+  .main_section {
+   padding: 1em;
+  }
+
   .chart {
    width: 700px;
    height: 600px;
@@ -194,9 +242,22 @@ a {
  }
 
 
+ @media screen and (max-width: 721px) {
+   .header {
+      font-size: 2rem;
+      padding: 10px;
+   }
+
+   .main {
+      padding: 10px;
+   }
+ }
+
+
  @media screen and (max-width: 426px) {
    .header {
       padding: 10px;
+      font-size: 1rem;
    }
 
    .main {
@@ -205,6 +266,7 @@ a {
 
    .main_section {
       padding: 10px;
+      font-size: 1rem;
    }
 
    .container {
@@ -213,8 +275,21 @@ a {
    
     .chart {
       width: 400px;
-      height: 600px;
-       padding: 2rem;
-       background-color: #fff;
+      padding: 10px;
+      background-color: #fff;
     }
+ }
+
+ @media screen and (max-width: 376px) {
+   .chart {
+      width: 350px;
+
+   }
+ }
+
+ @media screen and (max-width: 321px) {
+   .chart {
+      width: 90vw;
+
+   }
  }
